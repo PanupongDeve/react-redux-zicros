@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import './style.css';
 
 class CenterLayout extends Component {
     constructor(props) {
@@ -9,7 +10,7 @@ class CenterLayout extends Component {
     render() {
         return (
             <section>
-                <div className="container-alt">
+                <div id="centerLayout" className="container-alt animated zoomIn">
                     <div className="row">
                         <div className="col-sm-12">
                             <div className="wrapper-page">
