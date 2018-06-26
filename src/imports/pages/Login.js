@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import CenterLayout from '@imports/Layout/CenterLayout';
 import AccountContent from '@imports/Layout/AccountContent';
 import AccountPage from '@imports/Layout/AccountPage';
+import { toast } from 'react-toastify';
 import {
     Header, 
     FormInput,
@@ -26,10 +27,12 @@ class Login extends Component {
     }
 
     onSubmit = (event) => {
-        alert('Submit Success');
+        const {notify} = this.props;
+        notify.original('👌 Submit Success!');
 
         event.preventDefault();
     }
+    
 
     render() {
         return (
@@ -75,7 +78,10 @@ class Login extends Component {
 
 
 const mapStateToProps = (state) => {
-    return {text: state.text}
+    return {
+        text: state.text,
+        notify: state.notify
+    }
 }
 
 export default connect(mapStateToProps)(Login);

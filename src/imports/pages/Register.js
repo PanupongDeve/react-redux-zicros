@@ -68,7 +68,7 @@ class Register extends Component {
                             />
 
                             <BtnSubmit 
-                                btnName="Log In"
+                                btnName="Register"
                                 btnClass="btn-danger"
                                 {...this.props}
                             />  
