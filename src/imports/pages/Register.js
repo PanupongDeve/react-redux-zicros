@@ -41,6 +41,7 @@ class Register extends Component {
                             <FormInput 
                                 grid="col-xs-12"
                                 type="email"
+                                name="email"
                                 required={true}
                                 placeholder="Email"
                                 {...this.props}
@@ -49,6 +50,7 @@ class Register extends Component {
                             <FormInput 
                                 grid="col-xs-12"
                                 type="text"
+                                name="username"
                                 required={true}
                                 placeholder="Username"
                                 {...this.props}
@@ -57,6 +59,7 @@ class Register extends Component {
                             <FormInput 
                                 grid="col-xs-12"
                                 type="password"
+                                name="password"
                                 required={true}
                                 placeholder="Password"
                                 {...this.props}
