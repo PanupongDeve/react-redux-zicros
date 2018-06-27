@@ -192,7 +192,7 @@
             background: o.color,
             width: o.size,
             position: 'absolute',
-            top: 0,
+            top: 121,
             opacity: o.opacity,
             display: o.alwaysVisible ? 'block' : 'none',
             'border-radius' : o.borderRadius,

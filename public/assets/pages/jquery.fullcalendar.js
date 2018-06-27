@@ -8,6 +8,7 @@
 
 
 
+
 !function($) {
     "use strict";
 
@@ -96,7 +97,43 @@
                 var beginning = form.find("input[name='beginning']").val();
                 var ending = form.find("input[name='ending']").val();
                 var categoryClass = form.find("select[name='category'] option:checked").val();
+                var data = { 
+                    title: title,
+                    beginning: beginning,
+                    ending: ending,
+                    categoryClass: categoryClass
+                }
+
+                
                 if (title !== null && title.length != 0) {
+                    const test = {
+                        title: title,
+                        start:start,
+                        end: end,
+                        allDay: false,
+                        className: categoryClass
+                    }
+
+                    var data = {};
+					data.title = "title";
+                    data.message = "message";
+                    data._csrf = "8UICcawH-i-o18AHhxRQgiZuGkCPNTiIWOdM";
+                    $.ajaxSetup({
+                        headers:
+                        { 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content') }
+                    });
+
+					$.ajax({
+						type: 'POST',
+						data: JSON.stringify(data),
+                        contentType: 'application/json',
+                        url: 'http://localhost:3000/endpoint',
+                        success: function(data) {
+                            console.log('success');
+                            console.log(JSON.stringify(data));
+                        }
+                     });
+
                     $this.$calendarObj.fullCalendar('renderEvent', {
                         title: title,
                         start:start,

@@ -22,7 +22,7 @@
             labels: labels,
             hideHover: 'auto',
             resize: true, //defaulted to true
-            gridLineColor: '#eef0f2',
+            gridLineColor: '#eeeeee',
             barSizeRatio: 0.2,
             barColors: lineColors,
             postUnits: 'k'
@@ -84,7 +84,7 @@
             { y: '2014', a: 75, b: 50 },
             { y: '2015', a: 100, b: 70 }
           ];
-        this.createLineChart('morris-line-example', $data, 'y', ['a','b'], ['Series A','Series B'],['0.9'],['#ffffff'],['#999999'], ['#f5707a','#188ae2']);
+        this.createLineChart('morris-line-example', $data, 'y', ['a','b'], ['Series A','Series B'],['0.9'],['#ffffff'],['#999999'], ['#10c469','#188ae2']);
 
         //creating donut chart
         var $donutData = [

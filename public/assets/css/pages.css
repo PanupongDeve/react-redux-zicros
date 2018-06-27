@@ -22,6 +22,7 @@ File: Menu
    - Sitemaps (v1.1)
    - Search Results (v1.1)
    - Blog (v1.2)
+   - Real Estate (v1.5)
 
 ============= */
 /* =============
@@ -185,7 +186,7 @@ File: Menu
   border-radius: 2px;
   font-weight: 500;
   cursor: pointer;
-  background-color: #26a69a;
+  background-color: #4bd396;
   text-decoration: none;
   color: #ffffff;
   font-size: 14px;
@@ -543,7 +544,7 @@ h3.timeline-title {
   padding-top: 5px;
   cursor: default;
   font-size: 16px;
-  color: #4bd396;
+  color: #26a69a;
   font-family: 'Hind Madurai', sans-serif;
   text-transform: uppercase;
 }
@@ -602,7 +603,7 @@ h3.timeline-title {
 }
 .portfolioFilter a:hover,
 .portfolioFilter a.current {
-  color: #4bd396;
+  color: #26a69a;
 }
 .thumb {
   border-radius: 3px;
@@ -659,7 +660,7 @@ h3.timeline-title {
   font-size: 16px;
   font-family: 'Hind Madurai', sans-serif;
   margin-bottom: 10px;
-  color: #4bd396;
+  color: #26a69a;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 400;

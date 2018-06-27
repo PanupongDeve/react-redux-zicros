@@ -25,7 +25,7 @@ File: Core
 body {
   font-family: roboto;
   margin: 0;
-  padding-bottom: 60px;
+  padding-bottom: 65px;
   overflow-x: hidden;
   background-color: #f3f3f3;
   color: #797979;
@@ -461,7 +461,7 @@ a:focus {
   background-color: #188ae2 !important;
 }
 .bg-success {
-  background-color: #4bd396 !important;
+  background-color: #26a69a !important;
 }
 .bg-info {
   background-color: #3ac9d6 !important;
@@ -491,7 +491,7 @@ a:focus {
   background-color: #8d6e63 !important;
 }
 .bg-teal {
-  background-color: #26a69a !important;
+  background-color: #4bd396 !important;
 }
 .bg-white {
   background-color: #ffffff !important;
@@ -519,7 +519,7 @@ a:focus {
   color: #f9c851 !important;
 }
 .text-success {
-  color: #4bd396 !important;
+  color: #26a69a !important;
 }
 .text-info {
   color: #3ac9d6 !important;
@@ -540,7 +540,7 @@ a:focus {
   color: #8d6e63 !important;
 }
 .text-teal {
-  color: #26a69a !important;
+  color: #4bd396 !important;
 }
 .text-dark {
   color: #313a46 !important;
@@ -563,7 +563,7 @@ a:focus {
   background-color: #188ae2;
 }
 .label-success {
-  background-color: #4bd396;
+  background-color: #26a69a;
 }
 .label-info {
   background-color: #3ac9d6;
@@ -587,7 +587,7 @@ a:focus {
   background-color: #8d6e63;
 }
 .label-teal {
-  background-color: #26a69a;
+  background-color: #4bd396;
 }
 .label-inverse {
   background-color: #3b3e47;
@@ -618,7 +618,7 @@ a:focus {
   background-color: #188ae2;
 }
 .badge-success {
-  background-color: #4bd396;
+  background-color: #26a69a;
 }
 .badge-info {
   background-color: #3ac9d6;
@@ -642,7 +642,7 @@ a:focus {
   background-color: #8d6e63;
 }
 .badge-teal {
-  background-color: #26a69a;
+  background-color: #4bd396;
 }
 .badge-inverse {
   background-color: #3b3e47;
@@ -804,7 +804,7 @@ a:focus {
   background-color: rgba(24, 138, 226, 0.4);
 }
 .waves-effect.waves-success .waves-ripple {
-  background-color: rgba(75, 211, 150, 0.4);
+  background-color: rgba(38, 166, 154, 0.4);
 }
 .waves-effect.waves-info .waves-ripple {
   background-color: rgba(58, 201, 214, 0.4);
@@ -828,27 +828,23 @@ a:focus {
    Print css
 ============= */
 @media print {
-  .page-title-box,
-  .topbar-left,
-  .hidden-print,
-  .breadcrumb,
+  #topnav,
   .page-title,
-  .footer {
-    display: none;
-    margin: 0;
-    padding: 0;
+  .breadcrumb,
+  .page-title-box,
+  .btn-default.dropdown-toggle {
+    display: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
-  .left,
-  .right-bar {
-    display: none;
+  .wrapper {
+    padding-top: 0 !important;
   }
-  .content {
-    margin-top: 0 !important;
-    padding-top: 0;
+  .panel {
+    border: 0 !important;
   }
-  .content-page {
-    margin-left: 0;
-    margin-top: 0;
+  .panel .panel-body {
+    padding: 0 !important;
   }
 }
 /* =============

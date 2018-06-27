@@ -14,7 +14,7 @@
     //creates line graph
     GoogleChart.prototype.createLineChart = function(selector, data, axislabel, colors) {
         var options = {
-            fontName: 'Roboto',
+            fontName: 'Hind Madurai',
             height: 340,
             curveType: 'function',
             fontSize: 14,
@@ -26,7 +26,7 @@
             pointSize: 4,
             tooltip: {
                 textStyle: {
-                    fontName: 'Roboto',
+                    fontName: 'Hind Madurai',
                     fontSize: 14
                 }
             },
@@ -61,7 +61,7 @@
     //creates area graph
     GoogleChart.prototype.createAreaChart = function(selector, data, axislabel, colors) {
         var options = {
-            fontName: 'Roboto',
+            fontName: 'Hind Madurai',
             height: 340,
             curveType: 'function',
             fontSize: 14,
@@ -73,7 +73,7 @@
             pointSize: 4,
             tooltip: {
                 textStyle: {
-                    fontName: 'Roboto',
+                    fontName: 'Hind Madurai',
                     fontSize: 14
                 }
             },
@@ -111,7 +111,7 @@
     //creates Column graph
     GoogleChart.prototype.createColumnChart = function(selector, data, axislabel, colors) {
         var options = {
-            fontName: 'Roboto',
+            fontName: 'Hind Madurai',
             height: 400,
             fontSize: 13,
             chartArea: {
@@ -121,7 +121,7 @@
             },
             tooltip: {
                 textStyle: {
-                    fontName: 'Roboto',
+                    fontName: 'Hind Madurai',
                     fontSize: 14
                 }
             },
@@ -155,7 +155,7 @@
     //creates bar graph
     GoogleChart.prototype.createBarChart = function(selector, data, colors) {
         var options = {
-            fontName: 'Roboto',
+            fontName: 'Hind Madurai',
             height: 400,
             fontSize: 14,
             chartArea: {
@@ -165,7 +165,7 @@
             },
             tooltip: {
                 textStyle: {
-                    fontName: 'Roboto',
+                    fontName: 'Hind Madurai',
                     fontSize: 14
                 }
             },
@@ -194,7 +194,7 @@
     //creates Column Stacked
     GoogleChart.prototype.createColumnStackChart = function(selector, data, axislabel, colors) {
         var options = {
-            fontName: 'Roboto',
+            fontName: 'Hind Madurai',
             height: 400,
             fontSize: 13,
             chartArea: {
@@ -205,7 +205,7 @@
             isStacked: true,
             tooltip: {
                 textStyle: {
-                    fontName: 'Roboto',
+                    fontName: 'Hind Madurai',
                     fontSize: 14
                 }
             },
@@ -239,7 +239,7 @@
     //creates Bar Stacked
     GoogleChart.prototype.createBarStackChart = function(selector, data, colors) {
         var options = {
-            fontName: 'Roboto',
+            fontName: 'Hind Madurai',
             height: 400,
             fontSize: 13,
             chartArea: {
@@ -250,7 +250,7 @@
             isStacked: true,
             tooltip: {
                 textStyle: {
-                    fontName: 'Roboto',
+                    fontName: 'Hind Madurai',
                     fontSize: 14
                 }
             },
@@ -280,7 +280,7 @@
     //creates pie chart
     GoogleChart.prototype.createPieChart = function(selector, data, colors, is3D, issliced) {
         var options = {
-            fontName: 'Roboto',
+            fontName: 'Hind Madurai',
             fontSize: 13,
             height: 300,
             width: 500,
@@ -314,7 +314,7 @@
     //creates donut chart
     GoogleChart.prototype.createDonutChart = function(selector, data, colors) {
         var options = {
-            fontName: 'Roboto',
+            fontName: 'Hind Madurai',
             fontSize: 13,
             height: 300,
             pieHole: 0.55,

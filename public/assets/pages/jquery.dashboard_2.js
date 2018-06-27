@@ -45,11 +45,11 @@
 					lineWidth : 2,
 					fillColor : {
 						colors : [{
-							opacity : 0.5
+							opacity : 0
 						}, {
-							opacity : 0.9
+							opacity : 0.5
 						},{
-							opacity : 0.9
+							opacity : 0.6
 						}]
 					}
 				},
@@ -159,9 +159,9 @@
 	//initializing various charts and components
 	FlotChart.prototype.init = function() {
 		//plot graph data
-		var uploads = [[0, 4], [1, 8], [2, 10], [3, 18], [4, 9], [5, 5], [6, 7],[7, 14], [8, 8], [9, 16], [10, 14], [11, 12], [12, 10]];
-		var downloads = [[0, 2], [1, 4], [2, 7], [3, 12], [4, 6], [5, 3], [6, 10],[7, 8], [8, 5], [9, 14], [10, 10], [11, 10], [12, 8]];
-		var downloads1 = [[0, 1], [1, 3], [2, 6], [3, 9], [4, 4], [5, 2], [6, 8],[7, 6], [8, 4], [9, 10], [10, 8], [11, 14], [12, 5]];
+		var uploads = [[0, 5], [1, 8], [2, 10], [3, 12], [4, 9], [5, 5], [6, 7],[7, 9], [8, 8], [9, 16], [10, 14], [11, 12], [12, 10]];
+		var downloads = [[0, 2], [1, 4], [2, 7], [3, 9], [4, 6], [5, 3], [6, 10],[7, 8], [8, 5], [9, 14], [10, 10], [11, 10], [12, 8]];
+		var downloads1 = [[0, 1], [1, 3], [2, 6], [3, 7], [4, 4], [5, 2], [6, 8],[7, 6], [8, 4], [9, 10], [10, 8], [11, 14], [12, 5]];
 		var plabels = ["Google", "Yahoo","Facebbok"];
 		var pcolors = ['#4bd396', '#f5707a','#188ae2'];
 		var borderColor = '#f5f5f5';
@@ -172,7 +172,7 @@
 		//Donut pie graph data
 		var donutlabels = ["Series 1", "Series 2", "Series 3", "Series 4"];
 		var donutdatas = [35, 20, 10, 20];
-		var donutcolors = ['#ff9800', '#8d6e63', "#26a69a", "#3ac9d6"];
+		var donutcolors = ['#ff9800', '#8d6e63', "#26a69a", "#7fc1fc"];
 		this.createDonutGraph("#donut-chart #donut-chart-container", donutlabels, donutdatas, donutcolors);
 	},
 
