@@ -8,11 +8,14 @@ class NavMenuList extends Component {
     }
 
     render() {
-        const { head, Icon } = this.props
+        const { head, Icon, submenu } = this.props
         return (
             <li className="has-submenu">
                 <a href="#"><Icon size={32} style={style.mr5} />{head}</a>
-                <SubmenuLists {...this.props}/>
+                <SubmenuLists 
+                    submenu={submenu}
+                    {...this.props}
+                />
             </li>
         );
     }

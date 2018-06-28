@@ -9,32 +9,26 @@ export class NavMenuLists extends Component {
     }
 
     renderNavMenu = () => {
-        const lists = [
-            {
-                head:'Component',
-                Icon: FaColumns
-            },{
-                head:'UI',
-                Icon: FaCoffee
-            },{
-                head:'Code',
-                Icon: FaCog
-            }
-        ];
+        
+        const { lists } = this.props
         return lists.map((list, index) => {
             return <NavMenuList 
                     key={index}
                     head={list.head}
                     Icon={list.Icon}
+                    submenu={list.submenu}
+                    {...this.props}
                 />
         });
     }
 
     render() {
         return (
-            <ul className="navigation-menu">
-                {this.renderNavMenu()}  
-            </ul>
+            <div id="navigation">
+                <ul className="navigation-menu">
+                    {this.renderNavMenu()}  
+                </ul>
+            </div>
         );
     }
 }

@@ -8,3 +8,8 @@ export * from './ProfileLists';
 export * from './Submenu2Lists';
 export * from './SubmenuLists';
 export * from './NavMenuLists';
+export * from './SearchBar';
+export * from './ProfileBar';
+export * from './BurgurBar';
+export * from './MenuExtra';
+export * from './NavHeader';

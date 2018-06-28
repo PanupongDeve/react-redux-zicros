@@ -8,11 +8,12 @@ export class SubmenuLists extends Component {
     }
 
     renderMenuList = () => {
-        const lists = ['Example1', 'Example2', 'Example3'];
+        const { submenu: lists} = this.props
         return lists.map((list, index) => {
             return <SubmenuList 
                         key={index}
-                        title={list}
+                        title={list.name}
+                        submenu2={list.submenu2}
                         {...this.props}
                     />
         })
