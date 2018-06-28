@@ -8,6 +8,7 @@ class Blank extends Component {
     }
 
     render() {
+        
         return (
             <DashBoard {...this.props}>
                 แตก1

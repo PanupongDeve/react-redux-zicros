@@ -174,5 +174,117 @@ export const AppBar = {
                     },
                 ]
             },
+
+            { 
+                head: 'Code',
+                Icon:  FaColumns,
+                submenu: [
+                    {
+                        name: 'good',
+                        submenu2: [
+                            {
+                                name:'Todo',
+                                url: "#"
+                            },
+                            {
+                                name:'Todo',
+                                url: "#"
+                            },
+                            {
+                                name:'Todo',
+                                url: "#"
+                            }
+                        ]
+                    }, 
+                    {  name: 'bad',
+                        submenu2: [
+                            {
+                                name:'Todo',
+                                url: "#"
+                            },
+                            {
+                                name:'Todo',
+                                url: "#"
+                            },
+                            {
+                                name:'Todo',
+                                url: "#"
+                            }
+                        ]
+                    },
+                    {  name: 'Haha',
+                        submenu2: [
+                            {
+                                name:'Todo',
+                                url: "#"
+                            },
+                            {
+                                name:'Todo',
+                                url: "#"
+                            },
+                            {
+                                name:'Todo',
+                                url: "#"
+                            }
+                        ]
+                    },
+                ]
+            },
+
+            { 
+                head: 'Code',
+                Icon:  FaColumns,
+                submenu: [
+                    {
+                        name: 'good',
+                        submenu2: [
+                            {
+                                name:'Todo',
+                                url: "#"
+                            },
+                            {
+                                name:'Todo',
+                                url: "#"
+                            },
+                            {
+                                name:'Todo',
+                                url: "#"
+                            }
+                        ]
+                    }, 
+                    {  name: 'bad',
+                        submenu2: [
+                            {
+                                name:'Todo',
+                                url: "#"
+                            },
+                            {
+                                name:'Todo',
+                                url: "#"
+                            },
+                            {
+                                name:'Todo',
+                                url: "#"
+                            }
+                        ]
+                    },
+                    {  name: 'Haha',
+                        submenu2: [
+                            {
+                                name:'Todo',
+                                url: "#"
+                            },
+                            {
+                                name:'Todo',
+                                url: "#"
+                            },
+                            {
+                                name:'Todo',
+                                url: "#"
+                            }
+                        ]
+                    },
+                ]
+            },
         ]
 }
