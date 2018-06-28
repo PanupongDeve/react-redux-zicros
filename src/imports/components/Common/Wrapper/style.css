@@ -1,7 +1,6 @@
-#root {
-  width: 100%;
+.wrapper {
+    margin-top: -50vh
 }
-
 
 @media screen and (max-width: 576px){
   
@@ -17,9 +16,9 @@
 }
 
 @media screen and (max-width: 991px){
+   
 }
 
 @media screen and (max-width: 1140px){
   
 }
-

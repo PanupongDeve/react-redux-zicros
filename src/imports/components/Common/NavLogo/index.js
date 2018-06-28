@@ -7,7 +7,7 @@ export class NavLogo extends Component {
     }
 
     onClick = () => {
-        this.props.history.push('/');
+        this.props.history.push('#');
     }
 
     render() {

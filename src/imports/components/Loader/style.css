@@ -93,3 +93,14 @@ body {
     background-position: 100% 50%;
   }
 }
+
+#loader {
+  margin-left: 40vw;
+}
+
+
+@media screen and (max-width: 991px){
+  #loader {
+    margin-left: 20vw;
+  }
+}

@@ -1,8 +1,10 @@
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
 
 
 import { 
-    NavHeader
+    NavHeader,
+    Wrapper,
+    PageTitle
 } from '@imports/components/Common'
 
 class DashBoard extends Component {
@@ -13,10 +15,13 @@ class DashBoard extends Component {
 
     render() {
         return (
-            <body>
+            <Fragment>
                 <NavHeader {...this.props}/>
-                {this.props.children}
-            </body>
+                    <Wrapper>
+                        <PageTitle title="DashBoard" />
+                        {this.props.children}
+                    </Wrapper>
+            </Fragment>
         );
     }
 }

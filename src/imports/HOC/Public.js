@@ -15,7 +15,7 @@ export default function (ComposedComponent) {
         componentDidMount() {
             setTimeout(() => {
                 this.setState({loading: false})
-            }, 2000)
+            }, 1500)
         }
 
         render() {

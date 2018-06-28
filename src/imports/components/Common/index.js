@@ -13,3 +13,5 @@ export * from './ProfileBar';
 export * from './BurgurBar';
 export * from './MenuExtra';
 export * from './NavHeader';
+export * from './Wrapper';
+export * from './PageTitle';

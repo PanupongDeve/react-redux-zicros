@@ -145,7 +145,7 @@ class Loader extends React.Component {
         }
 
         return (
-            <div style={styles} className={className}>
+            <div id="loader" style={styles} className={className}>
                 <div className="sw-loader__holder">
                     {this.renderTiles()}
                 </div>
