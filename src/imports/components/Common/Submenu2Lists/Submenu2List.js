@@ -14,9 +14,15 @@ class Submenu2List extends Component {
         const { title2, url} = this.props;
         return (
             <li>
-                <a onClick={this.onRouteTo(url)}>{title2}</a>
+                <a style={style.click} onClick={this.onRouteTo(url)}>{title2}</a>
             </li>
         );
+    }
+}
+
+const style = {
+    click: {
+        cursor: 'pointer'
     }
 }
 
