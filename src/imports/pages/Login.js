@@ -28,7 +28,7 @@ class Login extends Component {
 
     onSubmit = (event) => {
         const {notify} = this.props;
-        notify.original('👌 Submit Success!');
+        notify.success('👌 Submit Success!');
 
         event.preventDefault();
     }
