@@ -2,7 +2,11 @@ import React, {Component} from 'react';
 import DashBoard from '@imports/Layout/DashBoard';
 import CardBox from '@imports/Layout/CardBox';
 import FormHorizontalLayout from '@imports/Layout/FormHorizontalLayout';
-import { FormHorizontalInput } from '@imports/components/Common/FormHorizontalInput'
+import { 
+    FormHorizontalInput,
+    FormButtonSet
+
+} from '@imports/components/Common'
 
 class Blank extends Component {
     constructor(props) {
@@ -20,8 +24,13 @@ class Blank extends Component {
                             label="Name"
                             type="text"
                             name="name"
+                            {...this.props}
                         />
-                    
+                        
+                        <FormButtonSet 
+                            btnSuccess="Submit"
+                            btnCancel="Cancel"
+                        />
 
                     </FormHorizontalLayout>
                 </CardBox>
