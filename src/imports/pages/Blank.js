@@ -71,6 +71,13 @@ class Blank extends Component {
                             {...this.props}
                         />
 
+                        <FormHorizontalInput 
+                            label="lastName"
+                            type="text"
+                            name="lastname"
+                            {...this.props}
+                        />
+
                         <FormButtonSet 
                             btnSuccess="Submit"
                             onBtnSuccessClick={this.onBtnSuccessClick}
