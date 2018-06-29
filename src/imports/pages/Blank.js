@@ -71,12 +71,6 @@ class Blank extends Component {
                             {...this.props}
                         />
 
-                        <FormHorizontalInput 
-                            label="lastName"
-                            type="text"
-                            name="lastname"
-                            {...this.props}
-                        />
 
                         <FormButtonSet 
                             btnSuccess="Submit"
@@ -84,6 +78,8 @@ class Blank extends Component {
                             onBtnCancelClick={this.onBtnCancelClick}
                             btnCancel="Cancel"
                         />
+
+                        
 
                     </FormHorizontalLayout>
                 </CardBox>

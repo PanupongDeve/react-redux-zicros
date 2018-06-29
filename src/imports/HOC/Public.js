@@ -1,6 +1,6 @@
-import React, {Component , Fragment} from "react";
+import React, {Component, Fragment} from "react";
 import Loader from '@imports/components/Loader';
-import { ToastContainer } from 'react-toastify';
+import {ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export default function (ComposedComponent) {
@@ -25,12 +25,12 @@ export default function (ComposedComponent) {
 
             const {loading} = this.state;
             if (loading) {
-                return (<Loader {...data}/>);
+                return <Loader />
             }
             return (
                 <Fragment>
                     <ComposedComponent {...this.props}/>
-                    <ToastContainer />
+                    <ToastContainer/>
                 </Fragment>
             );
         }
