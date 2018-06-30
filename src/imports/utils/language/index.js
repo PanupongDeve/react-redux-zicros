@@ -1,4 +1,5 @@
-export const checkLanguage = (lang, Text) => {
+export const checkLanguage = (Text) => {
+    const lang = getLanguage();
     switch (lang) {
         case 'th':
             return Text.th;

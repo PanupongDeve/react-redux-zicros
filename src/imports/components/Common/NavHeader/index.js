@@ -3,7 +3,7 @@ import './style.css';
 import {connect} from 'react-redux'
 import $ from 'jquery';
 
-import {NavLogo, NavMenuLists, MenuExtra as ProfileDash} from '@imports/components/Common'
+import {NavLogo, NavMenuLists, MenuExtra as ProfileDash } from '@imports/components/Common'
 
 import Container from '@imports/Layout/Container';
 

@@ -3,7 +3,8 @@ import {
 
     ProfileBar, 
     SearchBar,
-    BurgurBar 
+    BurgurBar,
+    LangBar 
 } from '@imports/components/Common'
 
 export class MenuExtra extends Component {
@@ -18,6 +19,7 @@ export class MenuExtra extends Component {
                 <ul className="nav navbar-nav navbar-right pull-right">
                     <SearchBar {...this.props}/>
                     <ProfileBar {...this.props}/>
+                    <LangBar {...this.props}/>
                 </ul>
                 <BurgurBar {...this.props}/>
             </div>

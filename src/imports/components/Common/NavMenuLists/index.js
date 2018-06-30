@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import NavMenuList from './NavMenuList';
+import NavLangList from './NavLangList'
 import { FaCog, FaCoffee, FaColumns} from 'react-icons/lib/fa';
 
 export class NavMenuLists extends Component {
@@ -26,7 +27,7 @@ export class NavMenuLists extends Component {
         return (
             <div id="navigation">
                 <ul className="navigation-menu">
-                    {this.renderNavMenu()}  
+                    {this.renderNavMenu()}
                 </ul>
             </div>
         );
