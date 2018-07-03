@@ -10,6 +10,7 @@ export default (state = 'en', action) => {
              action.payload();
              return {...state};
         default:
+            tools.setDefaultLanguage();
             return state;
     }
 }
