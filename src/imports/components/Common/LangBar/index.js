@@ -21,7 +21,6 @@ class LangBarWithOutRedux extends Component {
     }
 
     render() {
-        console.log(this.props);
         const LangText = Utils.checkLanguage(Text.Lang);
         const { title, thai, eng} = LangText;
         return (

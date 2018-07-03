@@ -8,6 +8,7 @@ import {
     FormButtonSet
 
 } from '@imports/components/Common'
+import * as Utils from '@imports/utils';
 
 class Blank extends Component {
     constructor(props) {
@@ -52,31 +53,33 @@ class Blank extends Component {
     }
 
     render() {
-
+        const { Blank } = this.props.text;
+        const blankText = Utils.checkLanguage(Blank);
+        console.log(blankText);
         return (
             <DashBoard {...this.props}>
-                <CardBox title="Starter Page">
+                <CardBox title={blankText.title}>
                     <FormHorizontalLayout>
                         <FormHorizontalInput 
-                            label="Name"
+                            label={blankText.name}
                             type="text"
-                            name="name"
+                            name={blankText.name}
                             {...this.props}
                         />
 
                         <FormHorizontalInput 
-                            label="lastName"
+                            label={blankText.lastName}
                             type="text"
-                            name="lastname"
+                            name={blankText.lastName}
                             {...this.props}
                         />
 
 
                         <FormButtonSet 
-                            btnSuccess="Submit"
+                            btnSuccess={blankText.submit}
                             onBtnSuccessClick={this.onBtnSuccessClick}
                             onBtnCancelClick={this.onBtnCancelClick}
-                            btnCancel="Cancel"
+                            btnCancel={blankText.cancel}
                         />
 
                         
@@ -91,7 +94,8 @@ class Blank extends Component {
 const mapStateToProps = (state) => {
     return {
         notify: state.notify,
-        form: state.form
+        form: state.form,
+        text: state.text
     }
 }
 
