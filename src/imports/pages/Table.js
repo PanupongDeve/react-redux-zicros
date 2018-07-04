@@ -2,13 +2,8 @@ import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import DashBoard from '@imports/Layout/DashBoard';
 import CardBox from '@imports/Layout/CardBox';
-import FormHorizontalLayout from '@imports/Layout/FormHorizontalLayout';
-import { 
-    FormHorizontalInput,
-    FormButtonSet
+import { DataTable } from '@imports/components/Common';
 
-} from '@imports/components/Common'
-import * as Utils from '@imports/utils';
 
 class Blank extends Component {
     constructor(props) {
@@ -53,37 +48,10 @@ class Blank extends Component {
     }
 
     render() {
-        const { Blank } = this.props.text;
-        const blankText = Utils.checkLanguage(Blank);
         return (
             <DashBoard {...this.props}>
-                <CardBox title={blankText.title}>
-                    <FormHorizontalLayout>
-                        <FormHorizontalInput 
-                            label={blankText.name}
-                            type="text"
-                            name={blankText.name}
-                            {...this.props}
-                        />
-
-                        <FormHorizontalInput 
-                            label={blankText.lastName}
-                            type="text"
-                            name={blankText.lastName}
-                            {...this.props}
-                        />
-
-
-                        <FormButtonSet 
-                            btnSuccess={blankText.submit}
-                            onBtnSuccessClick={this.onBtnSuccessClick}
-                            onBtnCancelClick={this.onBtnCancelClick}
-                            btnCancel={blankText.cancel}
-                        />
-
-                        
-
-                    </FormHorizontalLayout>
+                <CardBox title={'Table Example'}>
+                   <DataTable />
                 </CardBox>
             </DashBoard>
         );

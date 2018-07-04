@@ -18,3 +18,4 @@ export * from './PageTitle';
 export * from './FormHorizontalInput';
 export * from './FormButtonSet';
 export * from './LangBar';
+export * from './DataTable';
