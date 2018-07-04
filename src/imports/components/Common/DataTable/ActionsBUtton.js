@@ -6,10 +6,15 @@ class ActionsButtons extends Component {
         this.state = {}
     }
 
+    onClick = () => {
+        const { callback } = this.props;
+        callback ? callback() : console.log('callback is not define');
+    }
+
     render() {
         const { actions } = this.props;
         return (
-            <a style={style.font} href="#" className={`on-default`}>
+            <a onClick={this.onClick} style={style.font} className={`on-default`}>
                 <i className={`fa fa-${actions}`}></i>
             </a>
         );
@@ -18,8 +23,9 @@ class ActionsButtons extends Component {
 
 const style = {
     font: {
-        fontSize: '27px'
-    }
+        fontSize: '27px',
+        cursor: 'pointer'
+    },
 }
 
 

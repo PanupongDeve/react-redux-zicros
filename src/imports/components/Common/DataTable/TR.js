@@ -21,13 +21,21 @@ class TR extends Component {
     }
 
     render() {
-        this.renderTD();
+        const { onEditButtonClick, onDeleteButtonClick } = this.props;
         return (
             <tr className="gradeX">
                 {this.renderTD()}
                 <td class="actions">
-                    <ActionsButton actions="pencil"  {...this.props}  />
-                    <ActionsButton actions="trash-o"  {...this.props}  />
+                    <ActionsButton 
+                        callback={onEditButtonClick}
+                        actions="pencil"  
+                        {...this.props}  
+                    />
+                    <ActionsButton 
+                        callback={onDeleteButtonClick}
+                        actions="trash-o"  
+                        {...this.props}  
+                    />
                 </td>
             </tr>
         );

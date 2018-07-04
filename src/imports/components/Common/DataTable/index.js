@@ -6,6 +6,7 @@ import Thead from './Thead';
 import Tbody from './Tbody';
 import AddButton from './AddButton';
 import TableLayout from './TableLayout';
+import { generateMockData } from './mockData';
 
 export class DataTable extends Component {
     constructor(props) {
@@ -85,26 +86,7 @@ export class DataTable extends Component {
     render() {
         const tablelist = {
             headers: ['ID', 'Rendering engine', 'Browser', 'Platforms(s)', 'Actions'],
-            data: [
-                {
-                    id: 0,
-                    engine: 'Arident',
-                    borwser: 'nternet Explorer 4.0',
-                    os: 'Win 95+'
-                },
-                {
-                    id: 1,
-                    engine: 'Brident',
-                    borwser: 'nternet Explorer 4.0',
-                    os: 'Win 95+'
-                },
-                {
-                    id: 2,
-                    engine: 'Crident',
-                    borwser: 'nternet Explorer 4.0',
-                    os: 'Win 95+'
-                }
-            ]
+            data: generateMockData()
         }
 
 
@@ -114,7 +96,7 @@ export class DataTable extends Component {
                     <Thead headers={tablelist.headers} {...this.props}/>
                     <Tbody data={tablelist.data} {...this.props} />
                 </TableLayout>
-                <AddButton />  
+                <AddButton {...this.props}/>  
             </Fragment>
         );
     }

@@ -47,11 +47,31 @@ class Blank extends Component {
         notify.error('  You Click btn Cancel')
     }
 
+    onAddButtonClick = () => {
+        const { notify } = this.props;
+        notify.success(' You click Add Button Success')
+    }
+
+    onEditButtonClick = () => {
+        const { notify } = this.props;
+        notify.warning(' You click Edit Button Success')
+    }
+
+    onDeleteButtonClick = () => {
+        const { notify } = this.props;
+        notify.error(' You click Delete Button Success')
+    }
+
     render() {
         return (
             <DashBoard {...this.props}>
                 <CardBox title={'Table Example'}>
-                   <DataTable />
+                   <DataTable
+                        onAddButtonClick={this.onAddButtonClick}
+                        onEditButtonClick={this.onEditButtonClick}
+                        onDeleteButtonClick={this.onDeleteButtonClick}
+                        {...this.props}
+                    />
                 </CardBox>
             </DashBoard>
         );

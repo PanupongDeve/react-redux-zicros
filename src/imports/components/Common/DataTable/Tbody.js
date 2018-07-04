@@ -23,10 +23,5 @@ class Tbody extends Component {
     }
 }
 
-const style = {
-    font: {
-        fontSize: '27px'
-    }
-}
 
 export default Tbody;
