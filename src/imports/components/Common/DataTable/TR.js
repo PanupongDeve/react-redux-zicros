@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import _ from 'lodash';
+import ActionsButton from './ActionsBUtton';
 
 class TR extends Component {
     constructor(props) {
@@ -25,21 +26,11 @@ class TR extends Component {
             <tr className="gradeX">
                 {this.renderTD()}
                 <td class="actions">
-                    <a style={style.font} href="#" className="on-default edit-row">
-                        <i class="fa fa-pencil"></i>
-                    </a>
-                    <a style={style.font} href="#" className="on-default remove-row">
-                        <i class="fa fa-trash-o"></i>
-                    </a>
+                    <ActionsButton actions="pencil"  {...this.props}  />
+                    <ActionsButton actions="trash-o"  {...this.props}  />
                 </td>
             </tr>
         );
-    }
-}
-
-const style = {
-    font: {
-        fontSize: '27px'
     }
 }
 
