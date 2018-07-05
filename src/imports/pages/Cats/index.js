@@ -10,7 +10,7 @@ class Cats extends Component {
 
     componentDidMount() {
         this.props.fetchCats();
-        this.props.fetchCat();
+        this.props.fetchCat("5b3e538f3e74b2ed2c0be16d");
     }
 
     onBlankRoute = () => {

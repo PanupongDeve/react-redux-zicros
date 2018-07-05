@@ -11,7 +11,7 @@ export const findAll = async () => {
 }
 
 export const socketFindAll = async (dispatch) => {
-    await socket.emit('/api/cats', 'fetch_cats');
+    await socket.emit('/api/cats', { command: 'fetch_cats' });
     await socket.on('/api/cats', (data) => {
         dispatch({
             type: FETCH_CATS,
@@ -20,8 +20,9 @@ export const socketFindAll = async (dispatch) => {
     })
 }
 
-export const socketById = async (dispatch) => {
-    await socket.on('/api/cat', (data) => {
+export const socketById = async (id, dispatch) => {
+    await socket.emit('/api/cats', { command: 'fetch_cat', catId: id });
+    await socket.on(`/api/cats/${id}`, (data) => {
         dispatch({
             type: FETCH_CAT,
             payload: data
