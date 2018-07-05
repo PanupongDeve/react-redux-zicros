@@ -1,6 +1,6 @@
 import { FaCog, FaCoffee, FaColumns} from 'react-icons/lib/fa';
 
-export const AppBar = {
+ const AppBarText = {
     th: {
         title: 'หัวเรื่อง',
         login: 'เข้าสู่ระบบ',
@@ -288,3 +288,5 @@ export const AppBar = {
             },
         ]
 }
+
+export default AppBarText;

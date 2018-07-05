@@ -1,13 +1,14 @@
 import React, {Component} from 'react'
 import './style.css';
-import {connect} from 'react-redux'
 import $ from 'jquery';
 
 import {NavLogo, NavMenuLists, MenuExtra as ProfileDash } from '@imports/components/Common'
 
 import Container from '@imports/Layout/Container';
 
-export class NavHeaderWithOutRedux extends Component {
+import AppBarText from './navHeader.text';
+
+export class NavHeader extends Component {
     constructor(props) {
         super(props);
         this.state = {}
@@ -83,7 +84,7 @@ export class NavHeaderWithOutRedux extends Component {
     }
 
     render() {
-        const lists = this.props.text.AppBar.en
+        const lists = AppBarText.en
         return (
             <header id="topnav">
                 <div className="topbar-main">
@@ -102,8 +103,7 @@ export class NavHeaderWithOutRedux extends Component {
     }
 }
 
-const mapStateToProps = (state) => {
-    return {text: state.text}
-}
 
-export const NavHeader = connect(mapStateToProps)(NavHeaderWithOutRedux);
+
+
+
