@@ -53,6 +53,10 @@ class Blank extends Component {
         notify.error('  You Click btn Cancel')
     }
 
+    onCatsRoute = () => {
+        this.props.history.push('/cats');
+    }
+
     render() {
         const blankText = Utils.checkLanguage(BlankText);
         return (
@@ -85,6 +89,7 @@ class Blank extends Component {
 
                     </FormHorizontalLayout>
                 </CardBox>
+                <button onClick={this.onCatsRoute}>Cats</button>
             </DashBoard>
         );
     }
