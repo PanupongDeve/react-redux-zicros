@@ -3,7 +3,6 @@ import {connect} from 'react-redux';
 import CenterLayout from '@imports/Layout/CenterLayout';
 import AccountContent from '@imports/Layout/AccountContent';
 import AccountPage from '@imports/Layout/AccountPage';
-import { toast } from 'react-toastify';
 import {
     Header, 
     FormInput,

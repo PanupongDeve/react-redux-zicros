@@ -9,6 +9,7 @@ import {
 
 } from '@imports/components/Common'
 import * as Utils from '@imports/utils';
+import BlankText from './blank.text';
 
 class Blank extends Component {
     constructor(props) {
@@ -53,8 +54,7 @@ class Blank extends Component {
     }
 
     render() {
-        const { Blank } = this.props.text;
-        const blankText = Utils.checkLanguage(Blank);
+        const blankText = Utils.checkLanguage(BlankText);
         return (
             <DashBoard {...this.props}>
                 <CardBox title={blankText.title}>
@@ -94,7 +94,6 @@ const mapStateToProps = (state) => {
     return {
         notify: state.notify,
         form: state.form,
-        text: state.text
     }
 }
 

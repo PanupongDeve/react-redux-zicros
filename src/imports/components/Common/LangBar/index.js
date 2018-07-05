@@ -2,8 +2,8 @@ import React, {Component} from 'react'
 import { connect } from 'react-redux';
 import * as actions from '@imports/redux/actions';
 import { FaLanguage } from 'react-icons/lib/fa';
-import * as Text from '@imports/Text';
 import * as Utils from '@imports/utils';
+import LangBarText from './langBar.text';
 
 
 class LangBarWithOutRedux extends Component {
@@ -21,7 +21,7 @@ class LangBarWithOutRedux extends Component {
     }
 
     render() {
-        const LangText = Utils.checkLanguage(Text.Lang);
+        const LangText = Utils.checkLanguage(LangBarText);
         const { title, thai, eng} = LangText;
         return (
             <li className="dropdown navbar-c-items">
