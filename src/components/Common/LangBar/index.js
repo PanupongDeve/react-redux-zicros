@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
 import { connect } from 'react-redux';
-import * as actions from '../../../model/Redux/actions/LangActions';
+import * as actions from '../../../class/Redux/actions/LangActions';
 import { FaLanguage } from 'react-icons/lib/fa';
-import languageHelper from '../../../model/languageHelper';
+import languageHelper from '../../../class/languageHelper';
 import LangBarText from './langBar.text';
 
 

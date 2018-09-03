@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
-import * as actions from '../../../model/Redux/actions/FormActions';
+import * as actions from '../../../class/Redux/actions/FormActions';
 
 class FormInputWithoutConnect extends Component {
     constructor(props) {

@@ -11,7 +11,8 @@ export default class BaseOTS {
                 type,
                 payload
             });
-        }  
+        }
+        
     }
 
     toStore(payload, name) {
